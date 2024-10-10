@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Introduction to MongoDB",
+        "content": "MongoDB is a NoSQL database that uses a flexible, JSON-like data model.",
+        "category": "database",
+        "author": "Data Guru",
+        "image": "https://placehold.co/600x400/ff5733/FFFFFF/png",
+        "createdAt": "2024-08-15T12:30:00Z",
+        "updatedAt": "2024-08-15T12:30:00Z"
+    },
+    {
+        "title": "How to Learn JavaScript",
+        "content": "JavaScript is a versatile language used for both front-end and back-end development. Here’s a guide to getting started.",
+        "category": "programming",
+        "author": "Script Master",
+        "image": "https://placehold.co/600x400/33c1ff/FFFFFF/png",
+        "createdAt": "2024-08-20T09:00:00Z",
+        "updatedAt": "2024-08-20T09:00:00Z"
+    },
+    {
+        "title": "CSS Grid Layout",
+        "content": "CSS Grid Layout is a two-dimensional layout system for the web. It allows for complex layouts with ease.",
+        "category": "design",
+        "author": "Style Wizard",
+        "image": "https://placehold.co/600x400/5e6b8b/FFFFFF/png",
+        "createdAt": "2024-08-22T14:45:00Z",
+        "updatedAt": "2024-08-22T14:45:00Z"
+    },
+    {
+        "title": "Understanding RESTful APIs",
+        "content": "RESTful APIs are an architectural style for designing networked applications. Learn how they work and how to use them.",
+        "category": "web development",
+        "author": "API Specialist",
+        "image": "https://placehold.co/600x400/8e44ad/FFFFFF/png",
+        "createdAt": "2024-09-01T08:20:00Z",
+        "updatedAt": "2024-09-01T08:20:00Z"
+    },
+    {
+        "title": "Getting Started with React",
+        "content": "React is a JavaScript library for building user interfaces. This guide will help you set up and start using React.",
+        "category": "front-end",
+        "author": "React Pro",
+        "image": "https://placehold.co/600x400/3498db/FFFFFF/png",
+        "createdAt": "2024-09-05T16:00:00Z",
+        "updatedAt": "2024-09-05T16:00:00Z"
+    }
+]
