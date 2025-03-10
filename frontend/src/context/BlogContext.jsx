@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 const BlogContext = createContext();
 
@@ -20,8 +21,12 @@ export const BlogProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getPosts();
-    // console.log("data chnaged occured");
+    const myCookie = Cookies.get("token");
+
+    if (myCookie) {
+      getUserDetails();
+      getPosts();
+    }
   }, [dataChanged]);
 
   const getPosts = async () => {
@@ -38,11 +43,7 @@ export const BlogProvider = ({ children }) => {
     }
   };
 
-  const handleFetchData = async () => {
-    //const token =
-    sessionStorage.getItem("jwt");
-    // console.log("fetch token", token);
-
+  const getUserDetails = async () => {
     await fetch(API_URL + "/profile", {
       credentials: "include",
     }).then((response) => {
@@ -88,7 +89,7 @@ export const BlogProvider = ({ children }) => {
     dataChanged,
     setDataChanged,
 
-    handleFetchData,
+    getUserDetails,
 
     blogPost,
     setBlogPost,

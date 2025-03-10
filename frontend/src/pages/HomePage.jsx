@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="my-2 d-flex justify-content-between align-items-center">
           <h1>Recent Posts</h1>
 
           {/* <Link to="category" className="my-3 mx-1">
@@ -29,16 +29,16 @@ export const Posts = () => {
   const [userSearch, setUserSearch] = useState("");
   const { blogPost } = useBlogs();
 
-  // useEffect(() => {
-  //   console.log("user", userSearch);
-  // }, [userSearch]);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form onSubmit={handleSubmit}>
+        <Form.Group className="mb-3">
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Search here"
             value={userSearch}
             onChange={(e) => setUserSearch(e.target.value)}

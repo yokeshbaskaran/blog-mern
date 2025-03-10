@@ -24,7 +24,7 @@ const AllPosts = ({ blog }) => {
 
             <Button className="bg-dark border-0">
               <Link className="text-decoration-none" to={`/posts/${postId}`}>
-                <span className="text-white">About this Blog</span>
+                <span className="text-white">View Blog</span>
               </Link>
             </Button>
           </Card.Body>

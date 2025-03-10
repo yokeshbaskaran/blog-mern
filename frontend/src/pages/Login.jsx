@@ -10,7 +10,7 @@ const Login = () => {
   const [popBox, setPopBox] = useState(false);
   const navigate = useNavigate();
 
-  const { setUserInfo, dataChanged, setDataChanged, handleFetchData } =
+  const { setUserInfo, dataChanged, setDataChanged, getUserDetails } =
     useBlogs();
 
   const handleLogin = async (e) => {
@@ -39,7 +39,7 @@ const Login = () => {
           sessionStorage.setItem("jwt", userInfo.id); // Assuming userInfo.token contains JWT
 
           setUserInfo(userInfo);
-          handleFetchData();
+          getUserDetails();
 
           setTimeout(() => {
             setPopBox(!popBox);
